@@ -21,8 +21,15 @@ var num = [],
 //Add elements to an empty array using the for loop
 for (; i < 100; ++i) {
     num[i] = i + 1;
-}
+};
 
 //Accessing an element in an array. Use the index by:
 console.log(num[0]); // Outputs '1' since '1' is at the very beginning of the array
 console.log(num[99]); // Outputs '100' since '100' is at the very end of the array
+
+var sum = 0;
+for (var i = 0; i < num.length; ++i) {
+    // sum += num[i] is the same as sum = sum + num[i]
+    sum += num[i];
+};
+console.log(sum);
